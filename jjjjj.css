@@ -1,0 +1,414 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040D12; /* Set the background color to black */
+    color: #93B1A6; /* Set the text color to white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #040D12;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    background-image: url('https://i.pinimg.com/564x/12/f2/d8/12f2d843f320e42a7712bb806dc20970.jpg'); /* Replace with the URL of your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0;
+}
+
+.about-me,
+.projects,
+.contact {
+    background-color: #040D12; /* Darken the section background color */
+    padding: 40px 0;
+}
+
+.about-me h2,
+.projects h2,
+.contact h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: #040D12;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 20px 0;
+    }
+
+    .about-me,
+    .projects,
+    .contact {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+}
+
+/* Add this at the end of the styles.css file */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(4, 13, 18, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #93B1A6;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700; /* Set the highlight color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Add a transition for a smooth effect */
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Hero Content Styles */
+.hero-content {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 10px 0;
+}
+
+/* About Section Styles */
+.about-me .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-me img {
+    width: 300px; /* Set the desired width for the image */
+    height: 400px; /* Set the desired height for the image */
+    border-radius: 8px; /* Add a border radius for rounded corners if desired */
+    margin-right: 20px; /* Add margin to create space between the image and text */
+}
+
+.about-me p {
+    max-width: 400px; /* Adjust the maximum width of the content as needed */
+}
+
+.about-col1 {
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    border-radius: 15px;
+}
+
+.about-col2 {
+    flex-basis: 65%;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin-top: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Welcome Section Styles */
+.welcome {
+    background-image: url('https://i.pinimg.com/564x/d0/56/fc/d056fcad2c63462009271802ee5c5371.jpg'); /* Replace with the URL of your welcome section background image */
+    background-size: cover;
+    background-position: center;
+    color: #93B1A6;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.welcome p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Add styles for the social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 40px; /* Adjust the width of the social media icons */
+    height: 40px; /* Adjust the height of the social media icons */
+    border-radius: 50%; /* Make the icons circular */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+}
+
+/* Add this style for the project section */
+.projects {
+    background-color: #040D12; /* Dark background color for the projects section */
+}
+
+/* Add these styles for the project cards */
+.project {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    margin-top: 0;
+}
+
+.project-details p {
+    margin-bottom: 10px;
+}
+
+.project-details a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(#49d8c6,#0d1919); /* Green background color for the link */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-details a:hover {
+    background-color: #459da0; /* Darker green color on hover */
+}
+
+/* Add this style for the contact section */
+.contact {
+    color: #fff;
+}
+
+/* Add styles for the contact information */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #4CAF50; /* Green color for links in the contact info */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Update the styles for the skills section */
+.skills {
+    background-color: #040D12; /* Dark background color for the skills section */
+    color: #fff;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    background-color: #040D12; /* Background color for each skill item */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.skill-list li:hover {
+    background-color: #4CAF50; /* Darker green color on hover */
+    cursor: pointer;
+}
+
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    width: 100%;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.work iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

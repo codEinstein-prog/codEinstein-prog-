@@ -1,3 +1,5 @@
+font-family: 'Arial', 'Helvetica Neue', sans-serif;
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -411,4 +413,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (max-width: 600px) {
+   .navbar {
+       background-color: #040D12; /* Solid background for smaller screens */
+   }
 }

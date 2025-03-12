@@ -71,35 +71,23 @@ io.on('connection', (socket) => {
         modal.style.display = "none";
     }
 
-document.addEventListener("DOMContentLoaded", function() {
-        var tabLinks = document.querySelectorAll(".tab-titles .tab-links");
-        var tabContents = document.querySelectorAll(".tab-contents");
+document.addEventListener("DOMContentLoaded", function () {
+    let tabLinks = document.querySelectorAll(".tab-links");
+    let tabContents = document.querySelectorAll(".tab-contents");
 
-        function openTab(tabName) {
-            // Remove 'active-link' class from all tab links
-            tabLinks.forEach(function(link) {
-                link.classList.remove("active-link");
-            });
+    tabLinks.forEach(link => {
+        link.addEventListener("click", function () {
+            let target = this.getAttribute("data-tab");
 
-            // Remove 'active-tab' class from all tab contents
-            tabContents.forEach(function(content) {
-                content.classList.remove("active-tab");
-            });
+            tabLinks.forEach(link => link.classList.remove("active-link"));
+            tabContents.forEach(content => content.classList.remove("active-tab"));
 
-            // Add 'active-link' class to the clicked tab link
-            document.querySelector(`.tab-titles .tab-links[data-tab="${tabName}"]`).classList.add("active-link");
-
-            // Add 'active-tab' class to the corresponding tab content
-            document.getElementById(tabName).classList.add("active-tab");
-        }
-
-        // Add click event listeners to each tab link
-        tabLinks.forEach(function(link) {
-            link.addEventListener("hover", function() {
-                var tabName = this.getAttribute("data-tab");
-                openTab(tabName);
-            });
+            this.classList.add("active-link");
+            document.getElementById(target).classList.add("active-tab");
         });
+    });
+});
+
 
         // Initialize with the first tab as active
         openTab('Skills');

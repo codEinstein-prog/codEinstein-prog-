@@ -479,3 +479,25 @@ iframe:fullscreen {
 .slideshow-controls button:hover {
     background-color: #555;
 }
+
+.skills {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    background: #0d1919;
+    color: #93B1A6;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

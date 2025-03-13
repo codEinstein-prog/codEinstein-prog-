@@ -5,55 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-black-800 text-white">
-    <nav class="bg-black font-extrabold p-4 text-center">
-        <ul class="flex justify-left space-x-6">
-            <li><a href="#hero" class="text-white hover:text-gray-300">HOME</a></li>
-            <li><a href="#work" class="text-white hover:text-gray-300">WORK</a></li>
-            <li><a href="#skills" class="text-white hover:text-gray-300">RESUME</a></li>
-            <li><a href="#contact" class="text-white hover:text-gray-300">CONTACT</a></li>
+<body class="bg-gray-900 text-white">
+    
+    <!-- Navbar -->
+    <nav class="bg-gray-950 font-extrabold p-4">
+        <ul class="flex justify-start space-x-6 pl-8">
+            <li><a href="#hero" class="text-white hover:text-red-400 flex items-center"><i data-lucide="home" class="mr-2"></i> HOME</a></li>
+            <li><a href="#work" class="text-white hover:text-red-400 flex items-center"><i data-lucide="briefcase" class="mr-2"></i> WORK</a></li>
+            <li><a href="#resume" class="text-white hover:text-red-400 flex items-center"><i data-lucide="file-text" class="mr-2"></i> RESUME</a></li>
+            <li><a href="#contact" class="text-white hover:text-red-400 flex items-center"><i data-lucide="mail" class="mr-2"></i> CONTACT</a></li>
         </ul>
     </nav>
     
-    <section id="hero" class=" grid grid-cols-2 gap-4 py-20 bg-black-800 text-white">
-        <div class="flex grid grid-rows-4 grid-flow-col gap-4 content-between gap-2">
+    <!-- Hero Section -->
+    <section id="hero" class="grid grid-cols-1 md:grid-cols-2 items-center py-20 bg-gray-800 text-white px-8">
+        <div>
             <h1 class="text-4xl font-bold">Hi, I'm Nicholai Thomas</h1>
-            <p class="text-3x1" font-light>As a passionate software developer, I specialize in creating innovative and efficient solutions to meet a variety of technological needs. With a strong background in programming languages such as JavaScript, Python, and Java, I focus on writing clean, scalable code that drives user-centric experiences.</p>
-            <p class="text-lg mt-2">Software Developer | Web3 Enthusiast | IT Consultant</p>
-            <a href="#contact" class="inline-block mt-4 px-6 py-2 bg-red-800 text-white rounded-lg shadow-md">Get in Touch</a>
+            <p class="text-lg mt-4">Software Developer | Web3 Enthusiast | IT Consultant</p>
+            <p class="mt-4 text-gray-300">I specialize in developing scalable and efficient software solutions with expertise in JavaScript, React, and Web3 technologies.</p>
+            <a href="#contact" class="mt-6 inline-block px-6 py-2 bg-red-600 hover:bg-red-500 text-white rounded-lg shadow-md">Get in Touch</a>
         </div>
-        <div class="bg-white justify-items-center shadow-md rounded-lg w-80">
-            <a href="#"></a>
+        <div class="flex justify-center">
+            <img src="profile.jpg" alt="Nicholai Thomas" class="w-64 h-64 rounded-full shadow-lg">
         </div>
     </section>
     
-    <section id="work" class="py-16 text-center" bg-black-800 href="https://net4gmur.wixsite.com/herbingtonhigh">
-    <h2 class="text-3xl font-semibold mb-6">Previous Work</h2>
-    <div class="flex justify-center space-x-6">
-        <!-- Card 1 - Embed a live Wix website -->
-        <div class="bg-white p-6 shadow-md rounded-lg w-80">
-            <h3 class="font-semibold text-lg text-center">Wix Website 1</h3>
-            <iframe src="https://net4gmur.wixsite.com/herbingtonhigh" class="w-full h-48 rounded-lg" title="Wix Website 1"></iframe>
+    <!-- Previous Work -->
+    <section id="work" class="py-16 text-center bg-gray-850">
+        <h2 class="text-3xl font-semibold mb-6">Previous Work</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="https://net4gmur.wixsite.com/herbingtonhigh" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
+                <h3 class="font-semibold text-lg">Wix Website 1</h3>
+                <iframe src="https://net4gmur.wixsite.com/herbingtonhigh" class="w-full h-48 rounded-lg"></iframe>
+            </a>
+            <a href="https://net4gmur.wixsite.com/herbington-high-scho" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
+                <h3 class="font-semibold text-lg">Wix Website 2</h3>
+                <iframe src="https://net4gmur.wixsite.com/herbington-high-scho" class="w-full h-48 rounded-lg"></iframe>
+            </a>
+            <a href="https://net4gmur.wixsite.com/s-bakery" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
+                <h3 class="font-semibold text-lg">Wix Website 3</h3>
+                <iframe src="https://net4gmur.wixsite.com/s-bakery" class="w-full h-48 rounded-lg"></iframe>
+            </a>
         </div>
-
-        <!-- Card 2 - Embed a live Wix website -->
-        <div class="bg-white p-6 shadow-md rounded-lg w-80" href="https://net4gmur.wixsite.com/herbington-high-scho">
-            <h3 class="font-semibold text-lg text-center">Wix Website 2</h3>
-            <iframe src="https://net4gmur.wixsite.com/herbington-high-scho" class="w-full h-48 rounded-lg" title="Wix Website 2"></iframe>
-        </div>
-
-        <!-- Card 3 - Embed a live Wix website -->
-        <div class="bg-white p-6 shadow-md rounded-lg w-80" href="https://net4gmur.wixsite.com/s-bakery">
-            <h3 class="font-semibold text-lg text-center">Wix Website 3</h3>
-            <iframe src="https://net4gmur.wixsite.com/s-bakery" class="w-full h-48 rounded-lg" title="Wix Website 3"></iframe>
-        </div>
-    </div>
-</section>
-
-
+    </section>
     
-    <section id="skills" class=" bg-black-700 py-16 text-center">
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 text-center bg-gray-900">
+        <h2 class="text-3xl font-semibold mb-6">My Resume</h2>
+        <p class="text-gray-400">Download my latest resume to learn more about my skills and experience.</p>
+        <a href="resume.pdf" download class="mt-4 inline-block px-6 py-2 bg-red-600 hover:bg-red-500 text-white rounded-lg shadow-md">
+            <i data-lucide="download" class="mr-2"></i> Download Resume
+        </a>
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills" class="py-16 text-center bg-gray-850">
         <h2 class="text-3xl font-semibold mb-6">Skills</h2>
         <div class="flex flex-wrap justify-center gap-3">
             <span class="bg-red-500 text-white px-4 py-2 rounded-lg">JavaScript</span>
@@ -65,7 +73,8 @@
         </div>
     </section>
     
-    <footer id="contact" class="py-16 bg-black-600 text-white text-center">
+    <!-- Contact -->
+    <footer id="contact" class="py-16 bg-gray-950 text-white text-center">
         <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
         <form id="contact-form" class="flex flex-col items-center space-y-4">
             <input type="text" id="name" placeholder="Your Name" class="w-4/5 p-3 rounded-lg text-gray-900" required>
@@ -77,6 +86,7 @@
     </footer>
     
     <script>
+        lucide.createIcons();
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
             document.getElementById("form-message").classList.remove("hidden");

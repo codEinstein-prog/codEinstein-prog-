@@ -7,86 +7,79 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-gray-900 text-white">
-    
-    <!-- Navbar -->
-    <nav class="bg-gray-950 font-extrabold p-4">
-        <ul class="flex justify-start space-x-6 pl-8">
-            <li><a href="#hero" class="text-white hover:text-red-400 flex items-center"><i data-lucide="home" class="mr-2"></i> HOME</a></li>
-            <li><a href="#work" class="text-white hover:text-red-400 flex items-center"><i data-lucide="briefcase" class="mr-2"></i> WORK</a></li>
-            <li><a href="#resume" class="text-white hover:text-red-400 flex items-center"><i data-lucide="file-text" class="mr-2"></i> RESUME</a></li>
-            <li><a href="#contact" class="text-white hover:text-red-400 flex items-center"><i data-lucide="mail" class="mr-2"></i> CONTACT</a></li>
+<body class="bg-black text-white">
+    <nav class="bg-gray-900 font-extrabold p-4 text-center">
+        <ul class="flex justify-left space-x-6">
+            <li><a href="#hero" class="text-white hover:text-red-500">HOME</a></li>
+            <li><a href="#whoami" class="text-white hover:text-red-500">WHO AM I</a></li>
+            <li><a href="#resume" class="text-white hover:text-red-500">RESUME</a></li>
+            <li><a href="#skills" class="text-white hover:text-red-500">SKILLS</a></li>
+            <li><a href="#contact" class="text-white hover:text-red-500">CONTACT</a></li>
         </ul>
     </nav>
     
-    <!-- Hero Section -->
-    <section id="hero" class="grid grid-cols-1 md:grid-cols-2 items-center py-20 bg-gray-800 text-white px-8">
+    <section id="hero" class="grid grid-cols-2 gap-4 py-20 text-white text-center">
         <div>
-            <h1 class="text-4xl font-bold">Hi, I'm Nicholai Thomas</h1>
+            <h1 class="text-5xl font-bold">Hi, I'm Nicholai Thomas</h1>
             <p class="text-lg mt-4">Software Developer | Web3 Enthusiast | IT Consultant</p>
-            <p class="mt-4 text-gray-300">I specialize in developing scalable and efficient software solutions with expertise in JavaScript, React, and Web3 technologies.</p>
-            <a href="#contact" class="mt-6 inline-block px-6 py-2 bg-red-600 hover:bg-red-500 text-white rounded-lg shadow-md">Get in Touch</a>
-        </div>
-        <div class="flex justify-center">
-            <img src="profile.jpg" alt="Nicholai Thomas" class="w-64 h-64 rounded-full shadow-lg">
+            <a href="#contact" class="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg shadow-md">Get in Touch</a>
         </div>
     </section>
     
-    <!-- Previous Work -->
-    <section id="work" class="py-16 text-center bg-gray-850">
-        <h2 class="text-3xl font-semibold mb-6">Previous Work</h2>
-        <div class="flex flex-wrap justify-center gap-6">
-            <a href="https://net4gmur.wixsite.com/herbingtonhigh" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
-                <h3 class="font-semibold text-lg">Wix Website 1</h3>
-                <iframe src="https://net4gmur.wixsite.com/herbingtonhigh" class="w-full h-48 rounded-lg"></iframe>
-            </a>
-            <a href="https://net4gmur.wixsite.com/herbington-high-scho" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
-                <h3 class="font-semibold text-lg">Wix Website 2</h3>
-                <iframe src="https://net4gmur.wixsite.com/herbington-high-scho" class="w-full h-48 rounded-lg"></iframe>
-            </a>
-            <a href="https://net4gmur.wixsite.com/s-bakery" target="_blank" class="bg-gray-800 p-6 shadow-md rounded-lg w-80">
-                <h3 class="font-semibold text-lg">Wix Website 3</h3>
-                <iframe src="https://net4gmur.wixsite.com/s-bakery" class="w-full h-48 rounded-lg"></iframe>
-            </a>
-        </div>
+    <section id="whoami" class="py-16 text-center bg-gray-800">
+        <h2 class="text-3xl font-semibold mb-6">Who Am I?</h2>
+        <p class="max-w-2xl mx-auto">I am a passionate software developer with expertise in JavaScript, Web3, and IT consulting. My goal is to leverage my skills in software development and IT support to create impactful solutions.</p>
     </section>
     
-    <!-- Resume Section -->
     <section id="resume" class="py-16 text-center bg-gray-900">
-        <h2 class="text-3xl font-semibold mb-6">My Resume</h2>
-        <p class="text-gray-400">Download my latest resume to learn more about my skills and experience.</p>
-        <a href="resume.pdf" download class="mt-4 inline-block px-6 py-2 bg-red-600 hover:bg-red-500 text-white rounded-lg shadow-md">
-            <i data-lucide="download" class="mr-2"></i> Download Resume
-        </a>
-    </section>
-    
-    <!-- Skills -->
-    <section id="skills" class="py-16 text-center bg-gray-850">
-        <h2 class="text-3xl font-semibold mb-6">Skills</h2>
-        <div class="flex flex-wrap justify-center gap-3">
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">JavaScript</span>
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">React</span>
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">Web3</span>
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">QuickBooks Integration</span>
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">Squarespace Development</span>
-            <span class="bg-red-500 text-white px-4 py-2 rounded-lg">Wix Websites</span>
+        <h2 class="text-3xl font-semibold mb-6">Resume</h2>
+        <div class="max-w-4xl mx-auto text-left">
+            <h3 class="text-xl font-bold">Objective</h3>
+            <p>Secure a responsible career opportunity to fully utilize my skills while contributing to the company's success.</p>
+            <h3 class="text-xl font-bold mt-6">Experience</h3>
+            <p><strong>Information Technology Support Associate - ModTech</strong> (Feb 2024 - Present)</p>
+            <ul class="list-disc pl-6">
+                <li>Assess and repair hardware and software issues.</li>
+                <li>Provide network administration and IT support.</li>
+                <li>Design and maintain server systems.</li>
+            </ul>
+            <p><strong>Temporary Worker - B.L. Williams Group</strong> (Aug 2023 - Jan 2024)</p>
+            <ul class="list-disc pl-6">
+                <li>Reconciled invoices and maintained financial records.</li>
+                <li>Entered transactions into QuickBooks.</li>
+                <li>Communicated with clients regarding financial statements.</li>
+            </ul>
+            <h3 class="text-xl font-bold mt-6">Education</h3>
+            <p><strong>B.Sc. in Computing - University of Technology Jamaica</strong> (2023 - Present)</p>
+            <h3 class="text-xl font-bold mt-6">References</h3>
+            <p>Available upon request.</p>
         </div>
     </section>
     
-    <!-- Contact -->
-    <footer id="contact" class="py-16 bg-gray-950 text-white text-center">
+    <section id="skills" class="bg-gray-800 py-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">JavaScript</div>
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">React</div>
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">Web3</div>
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">QuickBooks</div>
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">Squarespace</div>
+            <div class="bg-red-500 text-white px-6 py-3 rounded-lg">Wix Development</div>
+        </div>
+    </section>
+    
+    <footer id="contact" class="py-16 bg-gray-900 text-white text-center">
         <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
         <form id="contact-form" class="flex flex-col items-center space-y-4">
-            <input type="text" id="name" placeholder="Your Name" class="w-4/5 p-3 rounded-lg text-gray-900" required>
-            <input type="email" id="email" placeholder="Your Email" class="w-4/5 p-3 rounded-lg text-gray-900" required>
-            <textarea id="message" placeholder="Your Message" class="w-4/5 p-3 rounded-lg text-gray-900" required></textarea>
+            <input type="text" placeholder="Your Name" class="w-4/5 p-3 rounded-lg text-gray-900" required>
+            <input type="email" placeholder="Your Email" class="w-4/5 p-3 rounded-lg text-gray-900" required>
+            <textarea placeholder="Your Message" class="w-4/5 p-3 rounded-lg text-gray-900" required></textarea>
             <button type="submit" class="bg-red-500 px-6 py-2 rounded-lg shadow-md">Send</button>
         </form>
         <p id="form-message" class="hidden text-green-400 mt-4">Message Sent!</p>
     </footer>
     
     <script>
-        lucide.createIcons();
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
             document.getElementById("form-message").classList.remove("hidden");

@@ -1,111 +1,42 @@
+/* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #040D12; /* Set the background color to black */
-    color: #93B1A6; /* Set the text color to white */
+    background-color: #040D12;
+    color: #93B1A6;
+    overflow-x: hidden;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Header Styles */
 header {
-    background-color: #040D12;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    background-image: url('https://i.pinimg.com/564x/12/f2/d8/12f2d843f320e42a7712bb806dc20970.jpg'); /* Replace with the URL of your background image */
+    position: relative;
+    background: linear-gradient(rgba(4, 13, 18, 0.8), rgba(4, 13, 18, 0.8)), url('https://i.pinimg.com/564x/12/f2/d8/12f2d843f320e42a7712bb806dc20970.jpg');
     background-size: cover;
     background-position: center;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #FF4500;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff4500, #FFD700);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 header p {
-    margin: 10px 0;
-}
-
-.about-me,
-.projects,
-.contact {
-    background-color: #040D12; /* Darken the section background color */
-    padding: 40px 0;
-}
-
-.about-me h2,
-.projects h2,
-.contact h2 {
-    text-align: center;
-}
-
-footer {
-    background-color: #040D12;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Responsive Styles */
-
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 20px 0;
-    }
-
-    .about-me,
-    .projects,
-    .contact {
-        padding: 20px 0;
-    }
-
-    header h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-}
-
-/* Add this at the end of the styles.css file */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+    opacity: 0.8;
 }
 
 /* Navbar Styles */
@@ -113,391 +44,183 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(4, 13, 18, 0.9); /* Slightly more opaque */
+    background: rgba(4, 13, 18, 0.9);
+    padding: 15px 0;
     z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-}
-
-.navbar h1 {
-    margin: 0;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-}
-
-.navbar li {
-    margin-right: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #93B1A6;
+    color: #FFD700;
     font-weight: bold;
-    position: relative;
-    overflow: hidden;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-.navbar a::before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #FFD700; /* Set the highlight color */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: width 0.3s ease-in-out; /* Add a transition for a smooth effect */
+.navbar a:hover {
+    color: #FF4500;
 }
 
-.navbar a:hover::before {
-    width: 100%;
-}
-
-/* Hero Content Styles */
+/* Hero Section */
 .hero-content {
     text-align: center;
-    padding: 100px 0;
+    padding: 120px 20px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-content h1 {
+    font-size: 3em;
     margin: 0;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
 }
 
 .hero-content p {
-    margin: 10px 0;
+    font-size: 1.2em;
+    opacity: 0.8;
 }
 
-/* About Section Styles */
-.about-me .about-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* About Section */
+.about-me {
     text-align: center;
+    padding: 60px 20px;
 }
-
-/* Style all font awesome icons */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  /* Facebook */
-  .fa-github {
-    background: #3B5998;
-    color: white;
-  }
-  
-  /* Twitter */
-  .fa-linkedin {
-    background: #55ACEE;
-    color: white;
-  }
 
 .about-me img {
-    width: 300px; /* Set the desired width for the image */
-    height: 400px; /* Set the desired height for the image */
-    border-radius: 8px; /* Add a border radius for rounded corners if desired */
-    margin-right: 20px; /* Add margin to create space between the image and text */
-}
-
-.about-me p {
-    max-width: 400px; /* Adjust the maximum width of the content as needed */
-}
-
-.about-col1 {
-    flex-basis: 35%;
-}
-
-.about-col1 img{
+    width: 250px;
+    height: auto;
     border-radius: 15px;
-}
-
-.about-col2 {
-    flex-basis: 65%;
-}
-
-.tab-titles {
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-
-.tab-links::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after {
-    width: 50%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin-top: 10px 0;
-}
-
-.tab-contents ul li span {
-    color: #ff004f;
-    font-size: 14px;
-}
-
-.tab-contents {
-    display: none;
-}
-
-.tab-contents.active-tab {
-    display: block;
-}
-
-/* Welcome Section Styles */
-.welcome {
-    background-image: url('https://i.pinimg.com/564x/d0/56/fc/d056fcad2c63462009271802ee5c5371.jpg'); /* Replace with the URL of your welcome section background image */
-    background-size: cover;
-    background-position: center;
-    color: #93B1A6;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.welcome h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-.welcome p {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-
-/* Add styles for the social media icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.social-icons img {
-    width: 40px; /* Adjust the width of the social media icons */
-    height: 40px; /* Adjust the height of the social media icons */
-    border-radius: 50%; /* Make the icons circular */
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7);
     transition: transform 0.3s ease-in-out;
 }
 
-.social-icons img:hover {
-    transform: scale(1.2); /* Increase the size on hover */
+.about-me img:hover {
+    transform: scale(1.05);
 }
 
-/* Add this style for the project section */
+/* Project Section */
 .projects {
-    background-color: #040D12; /* Dark background color for the projects section */
+    background: linear-gradient(to right, #040D12, #0d1919);
+    padding: 80px 20px;
+    text-align: center;
 }
 
-/* Add these styles for the project cards */
 .project {
     display: flex;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
 }
 
 .project img {
-    max-width: 100%;
-    border-radius: 8px; /* Add border radius for rounded corners */
+    width: 50%;
+    border-radius: 8px;
     margin-right: 20px;
 }
 
 .project-details {
+    text-align: left;
     flex: 1;
 }
 
 .project-details h3 {
-    margin-top: 0;
-}
-
-.project-details p {
-    margin-bottom: 10px;
+    color: #FFD700;
 }
 
 .project-details a {
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(#49d8c6,#0d1919); /* Green background color for the link */
-    color: #fff;
+    background: #FF4500;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background 0.3s;
 }
 
 .project-details a:hover {
-    background-color: #459da0; /* Darker green color on hover */
+    background: #FFD700;
+    color: #040D12;
 }
 
-/* Add this style for the contact section */
+/* Contact Section */
 .contact {
-    color: #fff;
-}
-
-/* Add styles for the contact information */
-.contact-info {
-    margin-top: 20px;
-}
-
-.contact-info p {
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
 }
 
 .contact-info a {
-    color: #4CAF50; /* Green color for links in the contact info */
+    color: #FFD700;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    color: #FF4500;
 }
 
-/* Update the styles for the skills section */
-.skills {
-    background-color: #040D12; /* Dark background color for the skills section */
-    color: #fff;
-}
-
-.skill-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skill-list li {
-    background-color: #040D12; /* Background color for each skill item */
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-.skill-list li:hover {
-    background-color: #4CAF50; /* Darker green color on hover */
-    cursor: pointer;
-}
-
-#portfolio {
-    padding: 50px 0;
-}
-
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-    width: 100%;
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work {
-    border-radius: 10px;
-    position: relative;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-.work iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-iframe:fullscreen {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-/* Existing styles remain unchanged */
-
-.slideshow {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.work {
-    display: none;
-}
-
-.slideshow-controls {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.slideshow-controls button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 0 10px;
-}
-
-.slideshow-controls button:hover {
-    background-color: #555;
-}
-
-.skills {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-.skill-list li {
-    background: #0d1919;
-    color: #93B1A6;
-    padding: 10px 20px;
+/* Social Icons */
+.social-icons a {
+    display: inline-block;
     margin: 10px;
-    border-radius: 5px;
-    font-weight: bold;
+    font-size: 30px;
+    color: #FFD700;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #FF4500;
+}
+
+/* Footer */
+footer {
+    background: #040D12;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #FF4500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

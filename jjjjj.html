@@ -317,29 +317,31 @@
     .animate-slideInLeft { animation: fadeInLeft 1.5s ease-in-out; }
     .animate-fadeInRight { animation: fadeInRight 1.5s ease-in-out; }
 </style>
-<section id="contact" class="bg-gradient-to-r from-gray-900 to-black flex items-center mx-auto px-4 space-y-6">
-    <div>
-        <h1 class="text-white-3xl font-bold mt-4">
-            Let's hear from you!
-        </h1>
-    </div>
-
-    <div>
-        <input type="text" name="First" placeholder="First Name" autocomplet="on" required class="bg-gray-400 text-red-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800 w-1/2">
-    </div>
-
-    <div>
-        <input type="text" name="Last" placeholder="Last Name" autocomplet="on" required class="bg-400 text-red-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800w-1/2">
-    </div>
-
-    <div>
-        <input type="email" name="Email" placeholder="Email" autocomplet="on" required class="bg-gray-400 text-red-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800w-1/2">
-    </div>
-
-    <div>
-        <textarea rows="5" col="60" type="text" name="Message" placeholder="Message" autocomplet="off" required class="bg-gradient-to-r from-gray-400 to-black text-red border-black block py-2 rounded focus:outline-none foucus:border-red-800"></textarea>
-    </div>
-    <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 hover:shadow-red-500 transition duration-500 hover:shadow-lg">SEND</button>
+<section id="contact" class="bg-gradient-to-r from-gray-900 to-black flex items-center mx-auto">
+    <form class="bg-gray-600 px-4 my-32 max-w-3xl mx-auto space-y-6">
+        <div>
+            <h1 class="text-white-3xl font-bold mt-4">
+                Let's hear from you!
+            </h1>
+        </div>
+    
+        <div>
+            <input type="text" name="First" placeholder="First Name" autocomplet="on" required class="bg-gray-400 text-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800 w-1/2">
+        </div>
+    
+        <div>
+            <input type="text" name="Last" placeholder="Last Name" autocomplet="on" required class="bg-gray-400 text-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800 w-1/2">
+        </div>
+    
+        <div>
+            <input type="email" name="Email" placeholder="Email" autocomplet="on" required class="bg-gray-400 text-sm border-black block py-2 rounded focus:outline-none foucus:border-red-800 w-1/2">
+        </div>
+    
+        <div>
+            <textarea rows="5" col="60" type="text" name="Message" placeholder="Message" autocomplet="off" required class="bg-gradient-to-r from-gray-400 to-black text-red border-black block py-2 rounded focus:outline-none foucus:border-red-800"></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 hover:shadow-red-500 transition duration-500 hover:shadow-lg">SEND</button>
+    </form>
 </section>
 </body>
 </html>

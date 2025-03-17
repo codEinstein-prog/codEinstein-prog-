@@ -167,11 +167,11 @@
     .animate-fadeIn { animation: fadeIn 1.5s ease-in-out forwards; }
 </style>
 
-    <section id="resume" class="relative bg-gradient-to-r from-gray-900 to-black-white py-16">
+    <section id="resume" class="relative bg-gradient-to-b from-black/60 to-black/80 py-16">
     <div class="container mx-auto flex flex-wrap items-start justify-between px-8">
 
         <!-- Left Container (Profile & Contact) -->
-        <div class="w-full md:w-1/3 bg-black/30 p-6 rounded-lg shadow-lg animate-slideInLeft">
+        <div class="w-full md:w-1/3 bg-gray-900 p-6 rounded-lg shadow-lg animate-slideInLeft">
             <!-- Profile Photo -->
             <div class="flex flex-col items-center">
                 <div class="rounded-full p-2 bg-gradient-to-br from-red-600 to-black shadow-lg">
@@ -179,11 +179,11 @@
                         class="rounded-full w-40 h-40 border-4 border-transparent hover:border-red-500 transition duration-500">
                 </div>
                 <h2 class="text-3xl font-bold mt-4">Nicholai Thomas</h2>
-                <p class="text-lg text-gray-300">Software Developer</p>
+                <p class="text-lg text-black/20">Software Developer</p>
             </div>
 
             <!-- Contact Card -->
-            <div class="mt-6 bg-black/60 p-4 rounded-lg shadow-md">
+            <div class="mt-6 bg-gray-300 p-4 rounded-lg shadow-md">
                 <h3 class="text-xl font-semibold text-red-500 flex items-center space-x-2">
                     <i class="fas fa-address-card"></i>
                     <span>Contact Info</span>
@@ -197,7 +197,7 @@
         </div>
 
         <!-- Right Container (Resume Timeline) -->
-        <div class="w-full md:w-2/3 bg-black/30 p-6 rounded-lg shadow-lg animate-fadeInRight">
+        <div class="w-full md:w-2/3 bg-gradient-to-b from-black/60 to-black/80 p-6 rounded-lg shadow-lg animate-fadeInRight">
             <h2 class="text-3xl font-bold text-red-500 flex items-center space-x-3">
                 <i class="fas fa-file-alt"></i>
                 <span>Resume</span>
@@ -317,31 +317,31 @@
     .animate-slideInLeft { animation: fadeInLeft 1.5s ease-in-out; }
     .animate-fadeInRight { animation: fadeInRight 1.5s ease-in-out; }
 </style>
-<section id="contact" class="bg-gradient-to-r from-black/90 to-black flex items-center mx-auto">
+<section id="contact" class="bg-gradient-to-r from-black/80 to-black/90 flex items-center mx-auto">
     
     <form class="bg-black/30 size-1/2 max-w-3xl my-32 px-4 mx-auto space-y-6 border-outline-white">
-        <div class="flex-text-center size-1/4">
-            <h1 class="text-white-lg font-bold mt-4 drop-shadow-lg animate-slidein-right">
+        <div class="flex-text-center">
+            <h1 class="text-white-lg font-bold mt-4 drop-shadow-lg animate-slidein-right size-1/4">
                 Let's hear from you!
             </h1>
         </div>
         
         <div>
-            <input type="text" name="First" placeholder="First Name" autocomplet="on" required class="bg-white text-sm border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
+            <input type="text" name="First" placeholder="First Name" autocomplet="on" required class="bg-white text-sm-black border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
         </div>
     
         <div>
-            <input type="text" name="Last" placeholder="Last Name" autocomplet="on" required class="bg-white text-sm border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
+            <input type="text" name="Last" placeholder="Last Name" autocomplet="on" required class="bg-white text-sm-black border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
         </div>
     
         <div>
-            <input type="email" name="Email" placeholder="Email" autocomplet="on" required class="bg-white text-sm border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
+            <input type="email" name="Email" placeholder="Email" autocomplet="on" required class="bg-white text-sm-black border-white block py-2 px-4 rounded focus-outline-none foucus-border-red w-full">
         </div>
     
         <div>
-            <textarea rows="5" col="60" type="text" name="Message" placeholder="Message" autocomplet="off" required class="bg-white text-white border-black block py-2 px-4 w-full rounded focus-outline-none foucus-border-red-800"></textarea>
+            <textarea rows="5" col="60" type="text" name="Message" placeholder="Message" autocomplet="off" required class="bg-white text-black border-black block py-2 px-4 w-full rounded focus-outline-none foucus-border-red-800"></textarea>
         </div>
-        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 hover:shadow-red-500 transition duration-500 hover:shadow-lg">SEND</button>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 hover:shadow-red-500 transition duration-500 hover:shadow-lg size-1/4">SEND</button>
     </form>
 </section>
 </body>

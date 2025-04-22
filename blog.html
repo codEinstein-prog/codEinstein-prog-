@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog Page</title>
+  <title>Nicholai's Blog Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -26,8 +26,8 @@
       <h1 class="text-2xl font-bold text-indigo-600 transition duration-300 hover:scale-105">My Blog</h1>
       <nav class="space-x-4">
         <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About</a>
-        <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
+        <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About</a>
+        <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
       </nav>
     </div>
   </header>
@@ -38,7 +38,7 @@
     <div class="mt-4 md:mt-0 flex flex-wrap gap-2">
       <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Tech</span>
       <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Life</span>
-      <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Tutorial</span>
+      <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#School</span>
     </div>
   </div>
 
@@ -46,9 +46,9 @@
   <main class="max-w-7xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
     <!-- Blog Card -->
     <article class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300">
-      <img src="https://source.unsplash.com/random/400x250" alt="Blog image" class="w-full h-48 object-cover">
+      <img src="https://i.pinimg.com/736x/b7/54/c3/b754c3fc8a745821b9a5590fda492d64.jpg" alt="Blog image" class="w-full h-48 object-cover">
       <div class="p-6">
-        <h2 class="text-xl font-semibold mb-2 text-indigo-700 transition-colors duration-200 hover:text-indigo-900">Post Title One</h2>
+        <h2 class="text-xl font-semibold mb-2 text-indigo-700 transition-colors duration-200 hover:text-indigo-900">My Digital Story</h2>
         <p class="text-gray-600 mb-4">A short description of the blog post goes here to entice users to read more.</p>
         <a href="#" class="text-indigo-600 font-medium hover:underline">Read more →</a>
       </div>
@@ -59,10 +59,10 @@
 
   <!-- Pagination -->
   <div class="max-w-7xl mx-auto px-4 py-6 flex justify-center space-x-2">
-    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Previous</button>
-    <button class="px-3 py-1 border rounded-md bg-indigo-500 text-white transition">1</button>
-    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">2</button>
-    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Next</button>
+    <a href="blog.html"> <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Previous</button></a>
+    <a href="blog.html"><button class="px-3 py-1 border rounded-md bg-indigo-500 text-white transition">1</button></a>
+    <a href="blog.html"><button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">2</button></a>
+    <a href="blog.html"><button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Next</button></a>
   </div>
 
   <!-- Footer -->
@@ -75,9 +75,15 @@
   <!-- Dark Mode Toggle -->
   <script>
     const toggleDarkMode = () => {
+      document.header.classList.toggle('dark');
+      document.header.classList.toggle('bg-gray-900');
+      document.header.classList.toggle('text-white');
       document.body.classList.toggle('dark');
       document.body.classList.toggle('bg-gray-900');
       document.body.classList.toggle('text-white');
+      document.footer.classList('dark');
+      document.footer.classList('bg-gray-900');
+      document.footer.classList('text-white');
     };
   </script>
   <div class="fixed bottom-6 right-6">

@@ -60,7 +60,7 @@
     <div class="space-y-4">
       <h3 class="text-2xl font-semibold text-indigo-700">Gallery</h3>
       <div class="space-y-4">
-        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwww.glenmuirhighschool.edu.jm%2Fimages%2Findex_images%2Fcrest.png&sp=1745368074Tdd4a328d4867db752756937aab02c9fcc2d493d989b258b5daf44cc18f0e27da" class="rounded-lg shadow-sm hover:shadow-md transition" alt="Gallery Image 1">
+        <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fwww.glenmuirhighschool.edu.jm%2Fimages%2Findex_images%2Fcrest.png&sp=1745387304Tb9aead9f62fd8896537634401bd73dc06b6e5fb726f45bd9a551da34c1080b04" class="rounded-lg shadow-sm hover:shadow-md transition" alt="Gallery Image 1">
         <img src="https://i.pinimg.com/736x/58/a4/df/58a4df93aa0b4520cd4e73f71b15f3b6.jpg" class="rounded-lg shadow-sm hover:shadow-md transition" alt="Gallery Image 2">
         <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fglenmuirhspsa.com%2Fwp-content%2Fuploads%2F2018%2F06%2Fsign.jpg&sp=1745371486Te54e55ad7f391d3c5759288a64237963c06e6da93f5118a57793eb3f881a875b" class="rounded-lg shadow-sm hover:shadow-md transition" alt="Gallery Image 3">
         <img src="https://i.pinimg.com/736x/a6/ab/b8/a6abb8a75928bc3f9af5f4ba6c5f17b6.jpg" class="rounded-lg shadow-sm hover:shadow-md transition" alt="Gallery Image 4">
@@ -97,6 +97,18 @@
       &copy; 2025 My Blog. All rights reserved.
     </div>
   </footer>
+
+    <!-- Dark Mode Toggle -->
+  <script>
+    const toggleDarkMode = () => {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    };
+  </script>
+  <div class="fixed bottom-6 right-6">
+    <button onclick="toggleDarkMode()" class="bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300">Toggle Dark Mode</button>
+  </div>
 
 </body>
 </html>

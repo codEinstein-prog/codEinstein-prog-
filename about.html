@@ -5,19 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>University Research Integrity Poster</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #e0f2fe, #90cdf4, #3b82f6);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <div class="max-w-4xl mx-auto p-8 bg-white shadow-xl rounded-lg mt-10 border border-gray-300">
-    <div class="text-center mb-8">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Academic_Cap.svg" alt="University Logo" class="h-16 mx-auto mb-4">
-      <h1 class="text-4xl font-bold text-blue-800">Crestmont University</h1>
-      <p class="text-xl text-gray-700 mt-2">Integrity in Research Policy</p>
+<body class="text-gray-800 font-sans">
+  <div class="max-w-5xl mx-auto p-10 bg-white shadow-2xl rounded-3xl mt-12 border border-blue-300">
+    <div class="text-center mb-10">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Academic_Cap.svg" alt="University Logo" class="h-20 mx-auto mb-6">
+      <h1 class="text-5xl font-bold text-blue-700">Crestmont University</h1>
+      <p class="text-2xl text-blue-600 mt-3 font-medium">Integrity in Research Policy</p>
     </div>
 
-    <div class="space-y-6">
+    <div class="space-y-10">
+      
+      <!-- Core Values -->
       <section>
-        <h2 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-1">Our Core Values</h2>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
+        <h2 class="text-3xl font-semibold text-blue-800 flex items-center mb-3">
+          <i class="fas fa-handshake mr-3 text-blue-600"></i> Our Core Values
+        </h2>
+        <ul class="list-disc list-inside ml-6 text-blue-700 space-y-1">
           <li><strong>Honesty:</strong> Report data and methods truthfully.</li>
           <li><strong>Accountability:</strong> Own your research and its impact.</li>
           <li><strong>Respect:</strong> Credit the contributions of others.</li>
@@ -26,9 +36,12 @@
         </ul>
       </section>
 
+      <!-- Research Violations -->
       <section>
-        <h2 class="text-2xl font-semibold text-red-700 border-b-2 border-red-200 pb-1">Research Violations</h2>
-        <ul class="list-disc list-inside mt-2 text-gray-700">
+        <h2 class="text-3xl font-semibold text-blue-800 flex items-center mb-3">
+          <i class="fas fa-exclamation-triangle mr-3 text-blue-600"></i> Research Violations
+        </h2>
+        <ul class="list-disc list-inside ml-6 text-blue-700 space-y-1">
           <li><strong>Fabrication:</strong> Making up data or results.</li>
           <li><strong>Falsification:</strong> Manipulating research materials or processes.</li>
           <li><strong>Plagiarism:</strong> Using another’s work without proper credit.</li>
@@ -36,12 +49,15 @@
         </ul>
       </section>
 
+      <!-- Commitment -->
       <section>
-        <h2 class="text-2xl font-semibold text-green-700 border-b-2 border-green-200 pb-1">Our Commitment</h2>
-        <p class="mt-2 text-gray-700">
+        <h2 class="text-3xl font-semibold text-blue-800 flex items-center mb-3">
+          <i class="fas fa-lightbulb mr-3 text-blue-600"></i> Our Commitment
+        </h2>
+        <p class="mt-2 text-blue-700">
           Crestmont University fosters a culture of ethical research by providing:
         </p>
-        <ul class="list-disc list-inside text-gray-700">
+        <ul class="list-disc list-inside ml-6 text-blue-700 space-y-1 mt-2">
           <li>Training & education in responsible conduct of research</li>
           <li>Fair investigation of reported misconduct</li>
           <li>Resources for research ethics and integrity</li>
@@ -49,10 +65,10 @@
       </section>
     </div>
 
-    <footer class="mt-10 text-center text-sm text-gray-500 border-t pt-4">
-      🔹 Integrity Builds Trust. Trust Powers Discovery. 🔹<br>
-      Visit: <a href="#" class="text-blue-600 underline">www.crestmont.edu/research-integrity</a> |
-      Contact: <a href="mailto:research.ethics@crestmont.edu" class="underline">research.ethics@crestmont.edu</a>
+    <footer class="mt-14 text-center text-sm text-blue-900 border-t border-blue-300 pt-6">
+      <p class="text-base font-semibold mb-2">🔹 Integrity Builds Trust. Trust Powers Discovery. 🔹</p>
+      <p>Visit: <a href="#" class="text-blue-600 underline hover:text-blue-800">www.crestmont.edu/research-integrity</a></p>
+      <p>Contact: <a href="mailto:research.ethics@crestmont.edu" class="text-blue-600 underline hover:text-blue-800">research.ethics@crestmont.edu</a></p>
     </footer>
   </div>
 </body>

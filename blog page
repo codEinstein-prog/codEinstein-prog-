@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          transitionProperty: {
+            'height': 'height',
+            'spacing': 'margin, padding',
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-500">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600 transition duration-300 hover:scale-105">My Blog</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search & Tags -->
+  <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-start md:items-center justify-between">
+    <input type="text" placeholder="Search posts..." class="w-full md:w-1/2 p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-shadow duration-300">
+    <div class="mt-4 md:mt-0 flex flex-wrap gap-2">
+      <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Tech</span>
+      <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Life</span>
+      <span class="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-indigo-200 transition">#Tutorial</span>
+    </div>
+  </div>
+
+  <!-- Blog Posts -->
+  <main class="max-w-7xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Blog Card -->
+    <article class="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300">
+      <img src="https://source.unsplash.com/random/400x250" alt="Blog image" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h2 class="text-xl font-semibold mb-2 text-indigo-700 transition-colors duration-200 hover:text-indigo-900">Post Title One</h2>
+        <p class="text-gray-600 mb-4">A short description of the blog post goes here to entice users to read more.</p>
+        <a href="#" class="text-indigo-600 font-medium hover:underline">Read more →</a>
+      </div>
+    </article>
+
+    <!-- More blog cards as needed... -->
+  </main>
+
+  <!-- Pagination -->
+  <div class="max-w-7xl mx-auto px-4 py-6 flex justify-center space-x-2">
+    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Previous</button>
+    <button class="px-3 py-1 border rounded-md bg-indigo-500 text-white transition">1</button>
+    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">2</button>
+    <button class="px-3 py-1 border rounded-md text-gray-600 hover:bg-indigo-100 transition">Next</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 py-6 border-t">
+    <div class="max-w-7xl mx-auto px-4 text-center text-gray-500">
+      &copy; 2025 My Blog. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Dark Mode Toggle -->
+  <script>
+    const toggleDarkMode = () => {
+      document.body.classList.toggle('dark');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-white');
+    };
+  </script>
+  <div class="fixed bottom-6 right-6">
+    <button onclick="toggleDarkMode()" class="bg-indigo-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300">Toggle Dark Mode</button>
+  </div>
+
+  <!-- Fetch Posts from JSON (for later integration) -->
+  <!--
+  <script>
+    fetch('posts.json')
+      .then(response => response.json())
+      .then(data => {
+        // Loop through posts and append dynamically to main
+        // Example: document.querySelector('main').innerHTML += createCard(data[i]);
+      });
+  </script>
+  -->
+
+</body>
+</html>
